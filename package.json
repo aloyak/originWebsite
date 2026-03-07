@@ -2,7 +2,8 @@
   "name": "origin",
   "scripts": {
     "dev": "vite",
-    "build": "git lfs pull && vite build"
+    "postinstall": "git lfs install && git lfs pull",
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.0.0"
