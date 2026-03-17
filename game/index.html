@@ -18,12 +18,6 @@
     <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
     <script>
         var Module = {
-            locateFile: function(path) {
-                if (path === "game.data") {
-                    return "https://github.com/aloyak/originWebsite/releases/download/demo-0.7/game.data";
-                }
-                return path;
-            },
             canvas: document.getElementById('canvas'),
             print:    function(t) { console.log(t); },
             printErr: function(t) { console.error(t); },
