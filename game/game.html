@@ -1,4 +1,3 @@
-<!--Template Shell for your game's Web Build-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +21,8 @@
             print:    function(t) { console.log(t); },
             printErr: function(t) { console.error(t); },
             
+            noImageDecoding: true,
+
             locateFile: function(path, prefix) {
                 if (path.endsWith(".data")) {
                     return "https://cdn.jsdelivr.net/gh/aloyak/originWebsite@main/game/game.data";
@@ -29,10 +30,27 @@
                 return prefix + path;
             },
 
+            monitorRunDependencies: function(left) {
+                this.totalDependencies = Math.max(this.totalDependencies || 0, left);
+                if (left) {
+                    var progress = Math.round(100 * (this.totalDependencies - left) / this.totalDependencies);
+                    console.log("Loading Assets: " + progress + "%");
+                } else {
+                    console.log("Download complete. Initializing engine...");
+                }
+            },
+
             onRuntimeInitialized: function() {
                 var canvas = document.getElementById('canvas');
                 canvas.width  = window.innerWidth;
                 canvas.height = window.innerHeight;
+                console.log("Origin Engine Initialized");
+            }
+        };
+
+        window.onerror = function(event) {
+            if (event.includes("out of memory") || event.includes("buffer")) {
+                console.error("The 300MB file is too large for the browser's allocated RAM.");
             }
         };
     </script>
