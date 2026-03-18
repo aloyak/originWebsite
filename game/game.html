@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta title="Origin Engine">
+    <title>Origin Engine</title>
     <style>
         * { margin: 0; padding: 0; }
         body { background: #000; overflow: hidden; }
@@ -21,6 +21,14 @@
             canvas: document.getElementById('canvas'),
             print:    function(t) { console.log(t); },
             printErr: function(t) { console.error(t); },
+            
+            locateFile: function(path, prefix) {
+                if (path.endsWith(".data")) {
+                    return "https://cdn.jsdelivr.net/gh/aloyak/originWebsite@main/game/game.data";
+                }
+                return prefix + path;
+            },
+
             onRuntimeInitialized: function() {
                 var canvas = document.getElementById('canvas');
                 canvas.width  = window.innerWidth;
