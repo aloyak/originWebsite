@@ -45,7 +45,7 @@ function App() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 sm:pl-5 w-full">
+            <div className="flex flex-col sm:flex-row items-center justify-start gap-4 sm:gap-8 sm:pl-5 w-full">
               <a
                 className="nes-btn is-primary transition-all duration-75 hover:-translate-y-1 hover:shadow-[0_8px_0_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none shadow-[0_4px_0_rgba(0,0,0,1)] text-[10px] sm:text-base w-full sm:w-auto"
                 href="https://github.com/aloyak/origin"
