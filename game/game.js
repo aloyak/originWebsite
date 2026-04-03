@@ -71,7 +71,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpnxovc6jj.js
+// include: /tmp/tmp0_gugkqu.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -161,6 +161,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
       }
 Module['FS_createPath']("/", "assets", true, true);
 Module['FS_createPath']("/assets", "models", true, true);
+Module['FS_createPath']("/assets/models", "primitive", true, true);
 Module['FS_createPath']("/assets/models", "sponza", true, true);
 Module['FS_createPath']("/assets/models/sponza", ".git", true, true);
 Module['FS_createPath']("/assets/models/sponza/.git", "hooks", true, true);
@@ -177,10 +178,9 @@ Module['FS_createPath']("/assets/models/sponza/.git/refs", "heads", true, true);
 Module['FS_createPath']("/assets/models/sponza/.git/refs", "remotes", true, true);
 Module['FS_createPath']("/assets/models/sponza/.git/refs/remotes", "origin", true, true);
 Module['FS_createPath']("/assets/models/sponza", "textures", true, true);
-Module['FS_createPath']("/assets/models", "statue", true, true);
-Module['FS_createPath']("/assets/models/statue", "textures", true, true);
 Module['FS_createPath']("/assets", "scenes", true, true);
 Module['FS_createPath']("/assets", "shaders", true, true);
+Module['FS_createPath']("/assets/shaders", "shadow", true, true);
 Module['FS_createPath']("/assets/shaders", "skybox", true, true);
 Module['FS_createPath']("/assets", "textures", true, true);
 Module['FS_createPath']("/assets/textures", "skybox", true, true);
@@ -230,25 +230,25 @@ Module['FS_createPath']("/assets/textures", "skybox", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/demo.png", "start": 0, "end": 66554}, {"filename": "/assets/models/cube.obj", "start": 66554, "end": 67477}, {"filename": "/assets/models/download-sponza.sh", "start": 67477, "end": 67696}, {"filename": "/assets/models/plane.obj", "start": 67696, "end": 68820}, {"filename": "/assets/models/sponza/.git/HEAD", "start": 68820, "end": 68843}, {"filename": "/assets/models/sponza/.git/config", "start": 68843, "end": 69112}, {"filename": "/assets/models/sponza/.git/description", "start": 69112, "end": 69185}, {"filename": "/assets/models/sponza/.git/hooks/applypatch-msg.sample", "start": 69185, "end": 69663}, {"filename": "/assets/models/sponza/.git/hooks/commit-msg.sample", "start": 69663, "end": 70559}, {"filename": "/assets/models/sponza/.git/hooks/fsmonitor-watchman.sample", "start": 70559, "end": 75285}, {"filename": "/assets/models/sponza/.git/hooks/post-update.sample", "start": 75285, "end": 75474}, {"filename": "/assets/models/sponza/.git/hooks/pre-applypatch.sample", "start": 75474, "end": 75898}, {"filename": "/assets/models/sponza/.git/hooks/pre-commit.sample", "start": 75898, "end": 77547}, {"filename": "/assets/models/sponza/.git/hooks/pre-merge-commit.sample", "start": 77547, "end": 77963}, {"filename": "/assets/models/sponza/.git/hooks/pre-push.sample", "start": 77963, "end": 79337}, {"filename": "/assets/models/sponza/.git/hooks/pre-rebase.sample", "start": 79337, "end": 84235}, {"filename": "/assets/models/sponza/.git/hooks/pre-receive.sample", "start": 84235, "end": 84779}, {"filename": "/assets/models/sponza/.git/hooks/prepare-commit-msg.sample", "start": 84779, "end": 86271}, {"filename": "/assets/models/sponza/.git/hooks/push-to-checkout.sample", "start": 86271, "end": 89054}, {"filename": "/assets/models/sponza/.git/hooks/sendemail-validate.sample", "start": 89054, "end": 91362}, {"filename": "/assets/models/sponza/.git/hooks/update.sample", "start": 91362, "end": 95012}, {"filename": "/assets/models/sponza/.git/index", "start": 95012, "end": 99616}, {"filename": "/assets/models/sponza/.git/info/exclude", "start": 99616, "end": 99856}, {"filename": "/assets/models/sponza/.git/logs/HEAD", "start": 99856, "end": 100047}, {"filename": "/assets/models/sponza/.git/logs/refs/heads/master", "start": 100047, "end": 100238}, {"filename": "/assets/models/sponza/.git/logs/refs/remotes/origin/HEAD", "start": 100238, "end": 100429}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.idx", "start": 100429, "end": 103209}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.pack", "start": 103209, "end": 112687909}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.rev", "start": 112687909, "end": 112688205}, {"filename": "/assets/models/sponza/.git/packed-refs", "start": 112688205, "end": 112688319}, {"filename": "/assets/models/sponza/.git/refs/heads/master", "start": 112688319, "end": 112688360}, {"filename": "/assets/models/sponza/.git/refs/remotes/origin/HEAD", "start": 112688360, "end": 112688392}, {"filename": "/assets/models/sponza/README.md", "start": 112688392, "end": 112688591}, {"filename": "/assets/models/sponza/sponza.mtl", "start": 112688591, "end": 112695230}, {"filename": "/assets/models/sponza/sponza.obj", "start": 112695230, "end": 136550468}, {"filename": "/assets/models/sponza/textures/Thumbs.db", "start": 136550468, "end": 136557636}, {"filename": "/assets/models/sponza/textures/background.tga", "start": 136557636, "end": 139703408}, {"filename": "/assets/models/sponza/textures/background_ddn.tga", "start": 139703408, "end": 142849180}, {"filename": "/assets/models/sponza/textures/chain_texture.tga", "start": 142849180, "end": 143897800}, {"filename": "/assets/models/sponza/textures/chain_texture_ddn.tga", "start": 143897800, "end": 144684276}, {"filename": "/assets/models/sponza/textures/lion.tga", "start": 144684276, "end": 148878624}, {"filename": "/assets/models/sponza/textures/lion2_ddn.tga", "start": 148878624, "end": 152024396}, {"filename": "/assets/models/sponza/textures/lion_ddn.tga", "start": 152024396, "end": 155170168}, {"filename": "/assets/models/sponza/textures/spnza_bricks_a_ddn.tga", "start": 155170168, "end": 158315940}, {"filename": "/assets/models/sponza/textures/spnza_bricks_a_diff.tga", "start": 158315940, "end": 161461712}, {"filename": "/assets/models/sponza/textures/sponza_arch_ddn.tga", "start": 161461712, "end": 164607484}, {"filename": "/assets/models/sponza/textures/sponza_arch_diff.tga", "start": 164607484, "end": 167753256}, {"filename": "/assets/models/sponza/textures/sponza_ceiling_a_ddn.tga", "start": 167753256, "end": 170899028}, {"filename": "/assets/models/sponza/textures/sponza_ceiling_a_diff.tga", "start": 170899028, "end": 174044800}, {"filename": "/assets/models/sponza/textures/sponza_column_a_ddn.tga", "start": 174044800, "end": 177190572}, {"filename": "/assets/models/sponza/textures/sponza_column_a_diff.tga", "start": 177190572, "end": 180336344}, {"filename": "/assets/models/sponza/textures/sponza_column_b_ddn.tga", "start": 180336344, "end": 183482116}, {"filename": "/assets/models/sponza/textures/sponza_column_b_diff.tga", "start": 183482116, "end": 186627888}, {"filename": "/assets/models/sponza/textures/sponza_column_c_ddn.tga", "start": 186627888, "end": 189773660}, {"filename": "/assets/models/sponza/textures/sponza_column_c_diff.tga", "start": 189773660, "end": 192919432}, {"filename": "/assets/models/sponza/textures/sponza_curtain_blue_diff.tga", "start": 192919432, "end": 205502388}, {"filename": "/assets/models/sponza/textures/sponza_curtain_ddn.tga", "start": 205502388, "end": 218085344}, {"filename": "/assets/models/sponza/textures/sponza_curtain_diff.tga", "start": 218085344, "end": 230668300}, {"filename": "/assets/models/sponza/textures/sponza_curtain_green_diff.tga", "start": 230668300, "end": 243251256}, {"filename": "/assets/models/sponza/textures/sponza_details_ddn.tga", "start": 243251256, "end": 247445604}, {"filename": "/assets/models/sponza/textures/sponza_details_diff.tga", "start": 247445604, "end": 250591376}, {"filename": "/assets/models/sponza/textures/sponza_fabric_blue_diff.tga", "start": 250591376, "end": 253737148}, {"filename": "/assets/models/sponza/textures/sponza_fabric_ddn.tga", "start": 253737148, "end": 257931496}, {"filename": "/assets/models/sponza/textures/sponza_fabric_diff.tga", "start": 257931496, "end": 261077268}, {"filename": "/assets/models/sponza/textures/sponza_fabric_green_diff.tga", "start": 261077268, "end": 264223040}, {"filename": "/assets/models/sponza/textures/sponza_flagpole_ddn.tga", "start": 264223040, "end": 267368812}, {"filename": "/assets/models/sponza/textures/sponza_flagpole_diff.tga", "start": 267368812, "end": 270514584}, {"filename": "/assets/models/sponza/textures/sponza_floor_a_ddn.tga", "start": 270514584, "end": 273660356}, {"filename": "/assets/models/sponza/textures/sponza_floor_a_diff.tga", "start": 273660356, "end": 276806128}, {"filename": "/assets/models/sponza/textures/sponza_roof_ddn.tga", "start": 276806128, "end": 279951900}, {"filename": "/assets/models/sponza/textures/sponza_roof_diff.tga", "start": 279951900, "end": 283097672}, {"filename": "/assets/models/sponza/textures/sponza_thorn_ddn.tga", "start": 283097672, "end": 283294324}, {"filename": "/assets/models/sponza/textures/sponza_thorn_diff.tga", "start": 283294324, "end": 284342944}, {"filename": "/assets/models/sponza/textures/vase_ddn.tga", "start": 284342944, "end": 287488716}, {"filename": "/assets/models/sponza/textures/vase_dif.tga", "start": 287488716, "end": 290634488}, {"filename": "/assets/models/sponza/textures/vase_hanging.tga", "start": 290634488, "end": 293780260}, {"filename": "/assets/models/sponza/textures/vase_hanging_ddn.tga", "start": 293780260, "end": 296926032}, {"filename": "/assets/models/sponza/textures/vase_plant.tga", "start": 296926032, "end": 301120380}, {"filename": "/assets/models/sponza/textures/vase_round.tga", "start": 301120380, "end": 304266152}, {"filename": "/assets/models/sponza/textures/vase_round_ddn.tga", "start": 304266152, "end": 307411924}, {"filename": "/assets/models/statue/SnakeStatue.mtl", "start": 307411924, "end": 307412463}, {"filename": "/assets/models/statue/SnakeStatue.obj", "start": 307412463, "end": 307822489}, {"filename": "/assets/models/statue/textures/snake_baseColor.jpeg", "start": 307822489, "end": 310253317}, {"filename": "/assets/models/statue/textures/snake_normal.png", "start": 310253317, "end": 313511899}, {"filename": "/assets/models/statue/textures/stones_baseColor.jpeg", "start": 313511899, "end": 316090895}, {"filename": "/assets/models/statue/textures/stones_normal.png", "start": 316090895, "end": 318247131}, {"filename": "/assets/models/suzanne.obj", "start": 318247131, "end": 318296267}, {"filename": "/assets/sandbox.png", "start": 318296267, "end": 318508751}, {"filename": "/assets/scenes/sponza.json", "start": 318508751, "end": 318510534}, {"filename": "/assets/shaders/frag.glsl", "start": 318510534, "end": 318513886}, {"filename": "/assets/shaders/post_frag.glsl", "start": 318513886, "end": 318514213}, {"filename": "/assets/shaders/post_vert.glsl", "start": 318514213, "end": 318514424}, {"filename": "/assets/shaders/skybox/skybox_frag.glsl", "start": 318514424, "end": 318514575}, {"filename": "/assets/shaders/skybox/skybox_vert.glsl", "start": 318514575, "end": 318514822}, {"filename": "/assets/shaders/vert.glsl", "start": 318514822, "end": 318515560}, {"filename": "/assets/textures/crate.jpg", "start": 318515560, "end": 318700499}, {"filename": "/assets/textures/grass.png", "start": 318700499, "end": 320099817}, {"filename": "/assets/textures/skybox/README.md", "start": 320099817, "end": 320100223}, {"filename": "/assets/textures/skybox/back.png", "start": 320100223, "end": 320308922}, {"filename": "/assets/textures/skybox/down.png", "start": 320308922, "end": 320442615}, {"filename": "/assets/textures/skybox/front.png", "start": 320442615, "end": 320655706}, {"filename": "/assets/textures/skybox/left.png", "start": 320655706, "end": 320868226}, {"filename": "/assets/textures/skybox/right.png", "start": 320868226, "end": 321072784}, {"filename": "/assets/textures/skybox/up.png", "start": 321072784, "end": 321353468}], "remote_package_size": 321353468});
+    loadPackage({"files": [{"filename": "/assets/demo.png", "start": 0, "end": 67455}, {"filename": "/assets/models/download-sponza.sh", "start": 67455, "end": 67674}, {"filename": "/assets/models/primitive/cube.obj", "start": 67674, "end": 68597}, {"filename": "/assets/models/primitive/plane.obj", "start": 68597, "end": 68916}, {"filename": "/assets/models/primitive/sphere.obj", "start": 68916, "end": 131925}, {"filename": "/assets/models/sponza/.git/HEAD", "start": 131925, "end": 131948}, {"filename": "/assets/models/sponza/.git/config", "start": 131948, "end": 132217}, {"filename": "/assets/models/sponza/.git/description", "start": 132217, "end": 132290}, {"filename": "/assets/models/sponza/.git/hooks/applypatch-msg.sample", "start": 132290, "end": 132768}, {"filename": "/assets/models/sponza/.git/hooks/commit-msg.sample", "start": 132768, "end": 133664}, {"filename": "/assets/models/sponza/.git/hooks/fsmonitor-watchman.sample", "start": 133664, "end": 138390}, {"filename": "/assets/models/sponza/.git/hooks/post-update.sample", "start": 138390, "end": 138579}, {"filename": "/assets/models/sponza/.git/hooks/pre-applypatch.sample", "start": 138579, "end": 139003}, {"filename": "/assets/models/sponza/.git/hooks/pre-commit.sample", "start": 139003, "end": 140652}, {"filename": "/assets/models/sponza/.git/hooks/pre-merge-commit.sample", "start": 140652, "end": 141068}, {"filename": "/assets/models/sponza/.git/hooks/pre-push.sample", "start": 141068, "end": 142442}, {"filename": "/assets/models/sponza/.git/hooks/pre-rebase.sample", "start": 142442, "end": 147340}, {"filename": "/assets/models/sponza/.git/hooks/pre-receive.sample", "start": 147340, "end": 147884}, {"filename": "/assets/models/sponza/.git/hooks/prepare-commit-msg.sample", "start": 147884, "end": 149376}, {"filename": "/assets/models/sponza/.git/hooks/push-to-checkout.sample", "start": 149376, "end": 152159}, {"filename": "/assets/models/sponza/.git/hooks/sendemail-validate.sample", "start": 152159, "end": 154467}, {"filename": "/assets/models/sponza/.git/hooks/update.sample", "start": 154467, "end": 158117}, {"filename": "/assets/models/sponza/.git/index", "start": 158117, "end": 162721}, {"filename": "/assets/models/sponza/.git/info/exclude", "start": 162721, "end": 162961}, {"filename": "/assets/models/sponza/.git/logs/HEAD", "start": 162961, "end": 163152}, {"filename": "/assets/models/sponza/.git/logs/refs/heads/master", "start": 163152, "end": 163343}, {"filename": "/assets/models/sponza/.git/logs/refs/remotes/origin/HEAD", "start": 163343, "end": 163534}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.idx", "start": 163534, "end": 166314}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.pack", "start": 166314, "end": 112751014}, {"filename": "/assets/models/sponza/.git/objects/pack/pack-519d061576e87318e693e32dcd2581cb33a01b8f.rev", "start": 112751014, "end": 112751310}, {"filename": "/assets/models/sponza/.git/packed-refs", "start": 112751310, "end": 112751424}, {"filename": "/assets/models/sponza/.git/refs/heads/master", "start": 112751424, "end": 112751465}, {"filename": "/assets/models/sponza/.git/refs/remotes/origin/HEAD", "start": 112751465, "end": 112751497}, {"filename": "/assets/models/sponza/README.md", "start": 112751497, "end": 112751696}, {"filename": "/assets/models/sponza/sponza.mtl", "start": 112751696, "end": 112758335}, {"filename": "/assets/models/sponza/sponza.obj", "start": 112758335, "end": 136613573}, {"filename": "/assets/models/sponza/textures/Thumbs.db", "start": 136613573, "end": 136620741}, {"filename": "/assets/models/sponza/textures/background.tga", "start": 136620741, "end": 139766513}, {"filename": "/assets/models/sponza/textures/background_ddn.tga", "start": 139766513, "end": 142912285}, {"filename": "/assets/models/sponza/textures/chain_texture.tga", "start": 142912285, "end": 143960905}, {"filename": "/assets/models/sponza/textures/chain_texture_ddn.tga", "start": 143960905, "end": 144747381}, {"filename": "/assets/models/sponza/textures/lion.tga", "start": 144747381, "end": 148941729}, {"filename": "/assets/models/sponza/textures/lion2_ddn.tga", "start": 148941729, "end": 152087501}, {"filename": "/assets/models/sponza/textures/lion_ddn.tga", "start": 152087501, "end": 155233273}, {"filename": "/assets/models/sponza/textures/spnza_bricks_a_ddn.tga", "start": 155233273, "end": 158379045}, {"filename": "/assets/models/sponza/textures/spnza_bricks_a_diff.tga", "start": 158379045, "end": 161524817}, {"filename": "/assets/models/sponza/textures/sponza_arch_ddn.tga", "start": 161524817, "end": 164670589}, {"filename": "/assets/models/sponza/textures/sponza_arch_diff.tga", "start": 164670589, "end": 167816361}, {"filename": "/assets/models/sponza/textures/sponza_ceiling_a_ddn.tga", "start": 167816361, "end": 170962133}, {"filename": "/assets/models/sponza/textures/sponza_ceiling_a_diff.tga", "start": 170962133, "end": 174107905}, {"filename": "/assets/models/sponza/textures/sponza_column_a_ddn.tga", "start": 174107905, "end": 177253677}, {"filename": "/assets/models/sponza/textures/sponza_column_a_diff.tga", "start": 177253677, "end": 180399449}, {"filename": "/assets/models/sponza/textures/sponza_column_b_ddn.tga", "start": 180399449, "end": 183545221}, {"filename": "/assets/models/sponza/textures/sponza_column_b_diff.tga", "start": 183545221, "end": 186690993}, {"filename": "/assets/models/sponza/textures/sponza_column_c_ddn.tga", "start": 186690993, "end": 189836765}, {"filename": "/assets/models/sponza/textures/sponza_column_c_diff.tga", "start": 189836765, "end": 192982537}, {"filename": "/assets/models/sponza/textures/sponza_curtain_blue_diff.tga", "start": 192982537, "end": 205565493}, {"filename": "/assets/models/sponza/textures/sponza_curtain_ddn.tga", "start": 205565493, "end": 218148449}, {"filename": "/assets/models/sponza/textures/sponza_curtain_diff.tga", "start": 218148449, "end": 230731405}, {"filename": "/assets/models/sponza/textures/sponza_curtain_green_diff.tga", "start": 230731405, "end": 243314361}, {"filename": "/assets/models/sponza/textures/sponza_details_ddn.tga", "start": 243314361, "end": 247508709}, {"filename": "/assets/models/sponza/textures/sponza_details_diff.tga", "start": 247508709, "end": 250654481}, {"filename": "/assets/models/sponza/textures/sponza_fabric_blue_diff.tga", "start": 250654481, "end": 253800253}, {"filename": "/assets/models/sponza/textures/sponza_fabric_ddn.tga", "start": 253800253, "end": 257994601}, {"filename": "/assets/models/sponza/textures/sponza_fabric_diff.tga", "start": 257994601, "end": 261140373}, {"filename": "/assets/models/sponza/textures/sponza_fabric_green_diff.tga", "start": 261140373, "end": 264286145}, {"filename": "/assets/models/sponza/textures/sponza_flagpole_ddn.tga", "start": 264286145, "end": 267431917}, {"filename": "/assets/models/sponza/textures/sponza_flagpole_diff.tga", "start": 267431917, "end": 270577689}, {"filename": "/assets/models/sponza/textures/sponza_floor_a_ddn.tga", "start": 270577689, "end": 273723461}, {"filename": "/assets/models/sponza/textures/sponza_floor_a_diff.tga", "start": 273723461, "end": 276869233}, {"filename": "/assets/models/sponza/textures/sponza_roof_ddn.tga", "start": 276869233, "end": 280015005}, {"filename": "/assets/models/sponza/textures/sponza_roof_diff.tga", "start": 280015005, "end": 283160777}, {"filename": "/assets/models/sponza/textures/sponza_thorn_ddn.tga", "start": 283160777, "end": 283357429}, {"filename": "/assets/models/sponza/textures/sponza_thorn_diff.tga", "start": 283357429, "end": 284406049}, {"filename": "/assets/models/sponza/textures/vase_ddn.tga", "start": 284406049, "end": 287551821}, {"filename": "/assets/models/sponza/textures/vase_dif.tga", "start": 287551821, "end": 290697593}, {"filename": "/assets/models/sponza/textures/vase_hanging.tga", "start": 290697593, "end": 293843365}, {"filename": "/assets/models/sponza/textures/vase_hanging_ddn.tga", "start": 293843365, "end": 296989137}, {"filename": "/assets/models/sponza/textures/vase_plant.tga", "start": 296989137, "end": 301183485}, {"filename": "/assets/models/sponza/textures/vase_round.tga", "start": 301183485, "end": 304329257}, {"filename": "/assets/models/sponza/textures/vase_round_ddn.tga", "start": 304329257, "end": 307475029}, {"filename": "/assets/sandbox.png", "start": 307475029, "end": 307758806}, {"filename": "/assets/scenes/physics.json", "start": 307758806, "end": 307772916}, {"filename": "/assets/scenes/sponza.json", "start": 307772916, "end": 307775307}, {"filename": "/assets/scenes/sponza_physics.json", "start": 307775307, "end": 307797773}, {"filename": "/assets/shaders/frag.glsl", "start": 307797773, "end": 307801982}, {"filename": "/assets/shaders/post_frag.glsl", "start": 307801982, "end": 307802548}, {"filename": "/assets/shaders/post_vert.glsl", "start": 307802548, "end": 307802759}, {"filename": "/assets/shaders/shadow/shadow_frag.glsl", "start": 307802759, "end": 307802799}, {"filename": "/assets/shaders/skybox/skybox_frag.glsl", "start": 307802799, "end": 307802950}, {"filename": "/assets/shaders/skybox/skybox_vert.glsl", "start": 307802950, "end": 307803197}, {"filename": "/assets/shaders/vert.glsl", "start": 307803197, "end": 307804240}, {"filename": "/assets/textures/crate.jpg", "start": 307804240, "end": 307989179}, {"filename": "/assets/textures/grass.png", "start": 307989179, "end": 309388497}, {"filename": "/assets/textures/rock.png", "start": 309388497, "end": 310342870}, {"filename": "/assets/textures/skybox/README.md", "start": 310342870, "end": 310343276}, {"filename": "/assets/textures/skybox/back.png", "start": 310343276, "end": 310551975}, {"filename": "/assets/textures/skybox/down.png", "start": 310551975, "end": 310685668}, {"filename": "/assets/textures/skybox/front.png", "start": 310685668, "end": 310898759}, {"filename": "/assets/textures/skybox/left.png", "start": 310898759, "end": 311111279}, {"filename": "/assets/textures/skybox/right.png", "start": 311111279, "end": 311315837}, {"filename": "/assets/textures/skybox/up.png", "start": 311315837, "end": 311596521}], "remote_package_size": 311596521});
 
   })();
 
-// end include: /tmp/tmpnxovc6jj.js
-// include: /tmp/tmp8dd2_gga.js
+// end include: /tmp/tmp0_gugkqu.js
+// include: /tmp/tmp5vkwtxf8.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp8dd2_gga.js
-// include: /tmp/tmp1t555e7t.js
+  // end include: /tmp/tmp5vkwtxf8.js
+// include: /tmp/tmpqveccwak.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp1t555e7t.js
+  // end include: /tmp/tmpqveccwak.js
 
 
 var arguments_ = [];
@@ -10425,6 +10425,8 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
 
   var _glDeleteFramebuffers = _emscripten_glDeleteFramebuffers;
 
+  var _glDeleteProgram = _emscripten_glDeleteProgram;
+
   var _glDeleteRenderbuffers = _emscripten_glDeleteRenderbuffers;
 
   var _glDeleteShader = _emscripten_glDeleteShader;
@@ -10483,6 +10485,8 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   var _glUniform1f = _emscripten_glUniform1f;
 
   var _glUniform1i = _emscripten_glUniform1i;
+
+  var _glUniform2fv = _emscripten_glUniform2fv;
 
   var _glUniform3fv = _emscripten_glUniform3fv;
 
@@ -11075,22 +11079,22 @@ function checkIncomingModuleAPI() {
   ignoredModuleProp('loadSplitModule');
 }
 var ASM_CONSTS = {
-  256828: ($0) => { var str = UTF8ToString($0) + '\n\n' + 'Abort/Retry/Ignore/AlwaysIgnore? [ariA] :'; var reply = window.prompt(str, "i"); if (reply === null) { reply = "i"; } return reply.length === 1 ? reply.charCodeAt(0) : -1; },  
- 257043: () => { if (typeof(AudioContext) !== 'undefined') { return true; } else if (typeof(webkitAudioContext) !== 'undefined') { return true; } return false; },  
- 257190: () => { if ((typeof(navigator.mediaDevices) !== 'undefined') && (typeof(navigator.mediaDevices.getUserMedia) !== 'undefined')) { return true; } else if (typeof(navigator.webkitGetUserMedia) !== 'undefined') { return true; } return false; },  
- 257424: ($0) => { if(typeof(Module['SDL2']) === 'undefined') { Module['SDL2'] = {}; } var SDL2 = Module['SDL2']; if (!$0) { SDL2.audio = {}; } else { SDL2.capture = {}; } if (!SDL2.audioContext) { if (typeof(AudioContext) !== 'undefined') { SDL2.audioContext = new AudioContext(); } else if (typeof(webkitAudioContext) !== 'undefined') { SDL2.audioContext = new webkitAudioContext(); } if (SDL2.audioContext) { if ((typeof navigator.userActivation) === 'undefined') { autoResumeAudioContext(SDL2.audioContext); } } } return SDL2.audioContext === undefined ? -1 : 0; },  
- 257976: () => { var SDL2 = Module['SDL2']; return SDL2.audioContext.sampleRate; },  
- 258044: ($0, $1, $2, $3) => { var SDL2 = Module['SDL2']; var have_microphone = function(stream) { if (SDL2.capture.silenceTimer !== undefined) { clearInterval(SDL2.capture.silenceTimer); SDL2.capture.silenceTimer = undefined; SDL2.capture.silenceBuffer = undefined } SDL2.capture.mediaStreamNode = SDL2.audioContext.createMediaStreamSource(stream); SDL2.capture.scriptProcessorNode = SDL2.audioContext.createScriptProcessor($1, $0, 1); SDL2.capture.scriptProcessorNode.onaudioprocess = function(audioProcessingEvent) { if ((SDL2 === undefined) || (SDL2.capture === undefined)) { return; } audioProcessingEvent.outputBuffer.getChannelData(0).fill(0.0); SDL2.capture.currentCaptureBuffer = audioProcessingEvent.inputBuffer; dynCall('vp', $2, [$3]); }; SDL2.capture.mediaStreamNode.connect(SDL2.capture.scriptProcessorNode); SDL2.capture.scriptProcessorNode.connect(SDL2.audioContext.destination); SDL2.capture.stream = stream; }; var no_microphone = function(error) { }; SDL2.capture.silenceBuffer = SDL2.audioContext.createBuffer($0, $1, SDL2.audioContext.sampleRate); SDL2.capture.silenceBuffer.getChannelData(0).fill(0.0); var silence_callback = function() { SDL2.capture.currentCaptureBuffer = SDL2.capture.silenceBuffer; dynCall('vp', $2, [$3]); }; SDL2.capture.silenceTimer = setInterval(silence_callback, ($1 / SDL2.audioContext.sampleRate) * 1000); if ((navigator.mediaDevices !== undefined) && (navigator.mediaDevices.getUserMedia !== undefined)) { navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(have_microphone).catch(no_microphone); } else if (navigator.webkitGetUserMedia !== undefined) { navigator.webkitGetUserMedia({ audio: true, video: false }, have_microphone, no_microphone); } },  
- 259737: ($0, $1, $2, $3) => { var SDL2 = Module['SDL2']; SDL2.audio.scriptProcessorNode = SDL2.audioContext['createScriptProcessor']($1, 0, $0); SDL2.audio.scriptProcessorNode['onaudioprocess'] = function (e) { if ((SDL2 === undefined) || (SDL2.audio === undefined)) { return; } if (SDL2.audio.silenceTimer !== undefined) { clearInterval(SDL2.audio.silenceTimer); SDL2.audio.silenceTimer = undefined; SDL2.audio.silenceBuffer = undefined; } SDL2.audio.currentOutputBuffer = e['outputBuffer']; dynCall('vp', $2, [$3]); }; SDL2.audio.scriptProcessorNode['connect'](SDL2.audioContext['destination']); if (SDL2.audioContext.state === 'suspended') { SDL2.audio.silenceBuffer = SDL2.audioContext.createBuffer($0, $1, SDL2.audioContext.sampleRate); SDL2.audio.silenceBuffer.getChannelData(0).fill(0.0); var silence_callback = function() { if ((typeof navigator.userActivation) !== 'undefined') { if (navigator.userActivation.hasBeenActive) { SDL2.audioContext.resume(); } } SDL2.audio.currentOutputBuffer = SDL2.audio.silenceBuffer; dynCall('vp', $2, [$3]); SDL2.audio.currentOutputBuffer = undefined; }; SDL2.audio.silenceTimer = setInterval(silence_callback, ($1 / SDL2.audioContext.sampleRate) * 1000); } },  
- 260912: ($0, $1) => { var SDL2 = Module['SDL2']; var numChannels = SDL2.capture.currentCaptureBuffer.numberOfChannels; for (var c = 0; c < numChannels; ++c) { var channelData = SDL2.capture.currentCaptureBuffer.getChannelData(c); if (channelData.length != $1) { throw 'Web Audio capture buffer length mismatch! Destination size: ' + channelData.length + ' samples vs expected ' + $1 + ' samples!'; } if (numChannels == 1) { for (var j = 0; j < $1; ++j) { setValue($0 + (j * 4), channelData[j], 'float'); } } else { for (var j = 0; j < $1; ++j) { setValue($0 + (((j * numChannels) + c) * 4), channelData[j], 'float'); } } } },  
- 261517: ($0, $1) => { var SDL2 = Module['SDL2']; var buf = $0 >>> 2; var numChannels = SDL2.audio.currentOutputBuffer['numberOfChannels']; for (var c = 0; c < numChannels; ++c) { var channelData = SDL2.audio.currentOutputBuffer['getChannelData'](c); if (channelData.length != $1) { throw 'Web Audio output buffer length mismatch! Destination size: ' + channelData.length + ' samples vs expected ' + $1 + ' samples!'; } for (var j = 0; j < $1; ++j) { channelData[j] = HEAPF32[buf + (j*numChannels + c)]; } } },  
- 262006: ($0) => { var SDL2 = Module['SDL2']; if ($0) { if (SDL2.capture.silenceTimer !== undefined) { clearInterval(SDL2.capture.silenceTimer); } if (SDL2.capture.stream !== undefined) { var tracks = SDL2.capture.stream.getAudioTracks(); for (var i = 0; i < tracks.length; i++) { SDL2.capture.stream.removeTrack(tracks[i]); } } if (SDL2.capture.scriptProcessorNode !== undefined) { SDL2.capture.scriptProcessorNode.onaudioprocess = function(audioProcessingEvent) {}; SDL2.capture.scriptProcessorNode.disconnect(); } if (SDL2.capture.mediaStreamNode !== undefined) { SDL2.capture.mediaStreamNode.disconnect(); } SDL2.capture = undefined; } else { if (SDL2.audio.scriptProcessorNode != undefined) { SDL2.audio.scriptProcessorNode.disconnect(); } if (SDL2.audio.silenceTimer !== undefined) { clearInterval(SDL2.audio.silenceTimer); } SDL2.audio = undefined; } if ((SDL2.audioContext !== undefined) && (SDL2.audio === undefined) && (SDL2.capture === undefined)) { SDL2.audioContext.close(); SDL2.audioContext = undefined; } },  
- 263012: ($0, $1, $2) => { var w = $0; var h = $1; var pixels = $2; if (!Module['SDL2']) Module['SDL2'] = {}; var SDL2 = Module['SDL2']; if (SDL2.ctxCanvas !== Module['canvas']) { SDL2.ctx = Browser.createContext(Module['canvas'], false, true); SDL2.ctxCanvas = Module['canvas']; } if (SDL2.w !== w || SDL2.h !== h || SDL2.imageCtx !== SDL2.ctx) { SDL2.image = SDL2.ctx.createImageData(w, h); SDL2.w = w; SDL2.h = h; SDL2.imageCtx = SDL2.ctx; } var data = SDL2.image.data; var src = pixels / 4; var dst = 0; var num; if (typeof CanvasPixelArray !== 'undefined' && data instanceof CanvasPixelArray) { num = data.length; while (dst < num) { var val = HEAP32[src]; data[dst ] = val & 0xff; data[dst+1] = (val >> 8) & 0xff; data[dst+2] = (val >> 16) & 0xff; data[dst+3] = 0xff; src++; dst += 4; } } else { if (SDL2.data32Data !== data) { SDL2.data32 = new Int32Array(data.buffer); SDL2.data8 = new Uint8Array(data.buffer); SDL2.data32Data = data; } var data32 = SDL2.data32; num = data32.length; data32.set(HEAP32.subarray(src, src + num)); var data8 = SDL2.data8; var i = 3; var j = i + 4*num; if (num % 8 == 0) { while (i < j) { data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; } } else { while (i < j) { data8[i] = 0xff; i = i + 4 | 0; } } } SDL2.ctx.putImageData(SDL2.image, 0, 0); },  
- 264478: ($0, $1, $2, $3, $4) => { var w = $0; var h = $1; var hot_x = $2; var hot_y = $3; var pixels = $4; var canvas = document.createElement("canvas"); canvas.width = w; canvas.height = h; var ctx = canvas.getContext("2d"); var image = ctx.createImageData(w, h); var data = image.data; var src = pixels / 4; var dst = 0; var num; if (typeof CanvasPixelArray !== 'undefined' && data instanceof CanvasPixelArray) { num = data.length; while (dst < num) { var val = HEAP32[src]; data[dst ] = val & 0xff; data[dst+1] = (val >> 8) & 0xff; data[dst+2] = (val >> 16) & 0xff; data[dst+3] = (val >> 24) & 0xff; src++; dst += 4; } } else { var data32 = new Int32Array(data.buffer); num = data32.length; data32.set(HEAP32.subarray(src, src + num)); } ctx.putImageData(image, 0, 0); var url = hot_x === 0 && hot_y === 0 ? "url(" + canvas.toDataURL() + "), auto" : "url(" + canvas.toDataURL() + ") " + hot_x + " " + hot_y + ", auto"; var urlBuf = _malloc(url.length + 1); stringToUTF8(url, urlBuf, url.length + 1); return urlBuf; },  
- 265466: ($0) => { if (Module['canvas']) { Module['canvas'].style['cursor'] = UTF8ToString($0); } },  
- 265549: () => { if (Module['canvas']) { Module['canvas'].style['cursor'] = 'none'; } },  
- 265618: () => { return window.innerWidth; },  
- 265648: () => { return window.innerHeight; }
+  268588: ($0) => { var str = UTF8ToString($0) + '\n\n' + 'Abort/Retry/Ignore/AlwaysIgnore? [ariA] :'; var reply = window.prompt(str, "i"); if (reply === null) { reply = "i"; } return reply.length === 1 ? reply.charCodeAt(0) : -1; },  
+ 268803: () => { if (typeof(AudioContext) !== 'undefined') { return true; } else if (typeof(webkitAudioContext) !== 'undefined') { return true; } return false; },  
+ 268950: () => { if ((typeof(navigator.mediaDevices) !== 'undefined') && (typeof(navigator.mediaDevices.getUserMedia) !== 'undefined')) { return true; } else if (typeof(navigator.webkitGetUserMedia) !== 'undefined') { return true; } return false; },  
+ 269184: ($0) => { if(typeof(Module['SDL2']) === 'undefined') { Module['SDL2'] = {}; } var SDL2 = Module['SDL2']; if (!$0) { SDL2.audio = {}; } else { SDL2.capture = {}; } if (!SDL2.audioContext) { if (typeof(AudioContext) !== 'undefined') { SDL2.audioContext = new AudioContext(); } else if (typeof(webkitAudioContext) !== 'undefined') { SDL2.audioContext = new webkitAudioContext(); } if (SDL2.audioContext) { if ((typeof navigator.userActivation) === 'undefined') { autoResumeAudioContext(SDL2.audioContext); } } } return SDL2.audioContext === undefined ? -1 : 0; },  
+ 269736: () => { var SDL2 = Module['SDL2']; return SDL2.audioContext.sampleRate; },  
+ 269804: ($0, $1, $2, $3) => { var SDL2 = Module['SDL2']; var have_microphone = function(stream) { if (SDL2.capture.silenceTimer !== undefined) { clearInterval(SDL2.capture.silenceTimer); SDL2.capture.silenceTimer = undefined; SDL2.capture.silenceBuffer = undefined } SDL2.capture.mediaStreamNode = SDL2.audioContext.createMediaStreamSource(stream); SDL2.capture.scriptProcessorNode = SDL2.audioContext.createScriptProcessor($1, $0, 1); SDL2.capture.scriptProcessorNode.onaudioprocess = function(audioProcessingEvent) { if ((SDL2 === undefined) || (SDL2.capture === undefined)) { return; } audioProcessingEvent.outputBuffer.getChannelData(0).fill(0.0); SDL2.capture.currentCaptureBuffer = audioProcessingEvent.inputBuffer; dynCall('vp', $2, [$3]); }; SDL2.capture.mediaStreamNode.connect(SDL2.capture.scriptProcessorNode); SDL2.capture.scriptProcessorNode.connect(SDL2.audioContext.destination); SDL2.capture.stream = stream; }; var no_microphone = function(error) { }; SDL2.capture.silenceBuffer = SDL2.audioContext.createBuffer($0, $1, SDL2.audioContext.sampleRate); SDL2.capture.silenceBuffer.getChannelData(0).fill(0.0); var silence_callback = function() { SDL2.capture.currentCaptureBuffer = SDL2.capture.silenceBuffer; dynCall('vp', $2, [$3]); }; SDL2.capture.silenceTimer = setInterval(silence_callback, ($1 / SDL2.audioContext.sampleRate) * 1000); if ((navigator.mediaDevices !== undefined) && (navigator.mediaDevices.getUserMedia !== undefined)) { navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(have_microphone).catch(no_microphone); } else if (navigator.webkitGetUserMedia !== undefined) { navigator.webkitGetUserMedia({ audio: true, video: false }, have_microphone, no_microphone); } },  
+ 271497: ($0, $1, $2, $3) => { var SDL2 = Module['SDL2']; SDL2.audio.scriptProcessorNode = SDL2.audioContext['createScriptProcessor']($1, 0, $0); SDL2.audio.scriptProcessorNode['onaudioprocess'] = function (e) { if ((SDL2 === undefined) || (SDL2.audio === undefined)) { return; } if (SDL2.audio.silenceTimer !== undefined) { clearInterval(SDL2.audio.silenceTimer); SDL2.audio.silenceTimer = undefined; SDL2.audio.silenceBuffer = undefined; } SDL2.audio.currentOutputBuffer = e['outputBuffer']; dynCall('vp', $2, [$3]); }; SDL2.audio.scriptProcessorNode['connect'](SDL2.audioContext['destination']); if (SDL2.audioContext.state === 'suspended') { SDL2.audio.silenceBuffer = SDL2.audioContext.createBuffer($0, $1, SDL2.audioContext.sampleRate); SDL2.audio.silenceBuffer.getChannelData(0).fill(0.0); var silence_callback = function() { if ((typeof navigator.userActivation) !== 'undefined') { if (navigator.userActivation.hasBeenActive) { SDL2.audioContext.resume(); } } SDL2.audio.currentOutputBuffer = SDL2.audio.silenceBuffer; dynCall('vp', $2, [$3]); SDL2.audio.currentOutputBuffer = undefined; }; SDL2.audio.silenceTimer = setInterval(silence_callback, ($1 / SDL2.audioContext.sampleRate) * 1000); } },  
+ 272672: ($0, $1) => { var SDL2 = Module['SDL2']; var numChannels = SDL2.capture.currentCaptureBuffer.numberOfChannels; for (var c = 0; c < numChannels; ++c) { var channelData = SDL2.capture.currentCaptureBuffer.getChannelData(c); if (channelData.length != $1) { throw 'Web Audio capture buffer length mismatch! Destination size: ' + channelData.length + ' samples vs expected ' + $1 + ' samples!'; } if (numChannels == 1) { for (var j = 0; j < $1; ++j) { setValue($0 + (j * 4), channelData[j], 'float'); } } else { for (var j = 0; j < $1; ++j) { setValue($0 + (((j * numChannels) + c) * 4), channelData[j], 'float'); } } } },  
+ 273277: ($0, $1) => { var SDL2 = Module['SDL2']; var buf = $0 >>> 2; var numChannels = SDL2.audio.currentOutputBuffer['numberOfChannels']; for (var c = 0; c < numChannels; ++c) { var channelData = SDL2.audio.currentOutputBuffer['getChannelData'](c); if (channelData.length != $1) { throw 'Web Audio output buffer length mismatch! Destination size: ' + channelData.length + ' samples vs expected ' + $1 + ' samples!'; } for (var j = 0; j < $1; ++j) { channelData[j] = HEAPF32[buf + (j*numChannels + c)]; } } },  
+ 273766: ($0) => { var SDL2 = Module['SDL2']; if ($0) { if (SDL2.capture.silenceTimer !== undefined) { clearInterval(SDL2.capture.silenceTimer); } if (SDL2.capture.stream !== undefined) { var tracks = SDL2.capture.stream.getAudioTracks(); for (var i = 0; i < tracks.length; i++) { SDL2.capture.stream.removeTrack(tracks[i]); } } if (SDL2.capture.scriptProcessorNode !== undefined) { SDL2.capture.scriptProcessorNode.onaudioprocess = function(audioProcessingEvent) {}; SDL2.capture.scriptProcessorNode.disconnect(); } if (SDL2.capture.mediaStreamNode !== undefined) { SDL2.capture.mediaStreamNode.disconnect(); } SDL2.capture = undefined; } else { if (SDL2.audio.scriptProcessorNode != undefined) { SDL2.audio.scriptProcessorNode.disconnect(); } if (SDL2.audio.silenceTimer !== undefined) { clearInterval(SDL2.audio.silenceTimer); } SDL2.audio = undefined; } if ((SDL2.audioContext !== undefined) && (SDL2.audio === undefined) && (SDL2.capture === undefined)) { SDL2.audioContext.close(); SDL2.audioContext = undefined; } },  
+ 274772: ($0, $1, $2) => { var w = $0; var h = $1; var pixels = $2; if (!Module['SDL2']) Module['SDL2'] = {}; var SDL2 = Module['SDL2']; if (SDL2.ctxCanvas !== Module['canvas']) { SDL2.ctx = Browser.createContext(Module['canvas'], false, true); SDL2.ctxCanvas = Module['canvas']; } if (SDL2.w !== w || SDL2.h !== h || SDL2.imageCtx !== SDL2.ctx) { SDL2.image = SDL2.ctx.createImageData(w, h); SDL2.w = w; SDL2.h = h; SDL2.imageCtx = SDL2.ctx; } var data = SDL2.image.data; var src = pixels / 4; var dst = 0; var num; if (typeof CanvasPixelArray !== 'undefined' && data instanceof CanvasPixelArray) { num = data.length; while (dst < num) { var val = HEAP32[src]; data[dst ] = val & 0xff; data[dst+1] = (val >> 8) & 0xff; data[dst+2] = (val >> 16) & 0xff; data[dst+3] = 0xff; src++; dst += 4; } } else { if (SDL2.data32Data !== data) { SDL2.data32 = new Int32Array(data.buffer); SDL2.data8 = new Uint8Array(data.buffer); SDL2.data32Data = data; } var data32 = SDL2.data32; num = data32.length; data32.set(HEAP32.subarray(src, src + num)); var data8 = SDL2.data8; var i = 3; var j = i + 4*num; if (num % 8 == 0) { while (i < j) { data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; data8[i] = 0xff; i = i + 4 | 0; } } else { while (i < j) { data8[i] = 0xff; i = i + 4 | 0; } } } SDL2.ctx.putImageData(SDL2.image, 0, 0); },  
+ 276238: ($0, $1, $2, $3, $4) => { var w = $0; var h = $1; var hot_x = $2; var hot_y = $3; var pixels = $4; var canvas = document.createElement("canvas"); canvas.width = w; canvas.height = h; var ctx = canvas.getContext("2d"); var image = ctx.createImageData(w, h); var data = image.data; var src = pixels / 4; var dst = 0; var num; if (typeof CanvasPixelArray !== 'undefined' && data instanceof CanvasPixelArray) { num = data.length; while (dst < num) { var val = HEAP32[src]; data[dst ] = val & 0xff; data[dst+1] = (val >> 8) & 0xff; data[dst+2] = (val >> 16) & 0xff; data[dst+3] = (val >> 24) & 0xff; src++; dst += 4; } } else { var data32 = new Int32Array(data.buffer); num = data32.length; data32.set(HEAP32.subarray(src, src + num)); } ctx.putImageData(image, 0, 0); var url = hot_x === 0 && hot_y === 0 ? "url(" + canvas.toDataURL() + "), auto" : "url(" + canvas.toDataURL() + ") " + hot_x + " " + hot_y + ", auto"; var urlBuf = _malloc(url.length + 1); stringToUTF8(url, urlBuf, url.length + 1); return urlBuf; },  
+ 277226: ($0) => { if (Module['canvas']) { Module['canvas'].style['cursor'] = UTF8ToString($0); } },  
+ 277309: () => { if (Module['canvas']) { Module['canvas'].style['cursor'] = 'none'; } },  
+ 277378: () => { return window.innerWidth; },  
+ 277408: () => { return window.innerHeight; }
 };
 
 // Imports from the Wasm binary.
@@ -11955,6 +11959,8 @@ var wasmImports = {
   /** @export */
   glDeleteFramebuffers: _glDeleteFramebuffers,
   /** @export */
+  glDeleteProgram: _glDeleteProgram,
+  /** @export */
   glDeleteRenderbuffers: _glDeleteRenderbuffers,
   /** @export */
   glDeleteShader: _glDeleteShader,
@@ -12017,6 +12023,8 @@ var wasmImports = {
   /** @export */
   glUniform1i: _glUniform1i,
   /** @export */
+  glUniform2fv: _glUniform2fv,
+  /** @export */
   glUniform3fv: _glUniform3fv,
   /** @export */
   glUniformMatrix4fv: _glUniformMatrix4fv,
@@ -12040,6 +12048,10 @@ var wasmImports = {
   invoke_ii,
   /** @export */
   invoke_iidi,
+  /** @export */
+  invoke_iif,
+  /** @export */
+  invoke_iiff,
   /** @export */
   invoke_iiffff,
   /** @export */
@@ -12139,28 +12151,6 @@ function invoke_iii(index,a1,a2) {
   }
 }
 
-function invoke_fi(index,a1) {
-  var sp = stackSave();
-  try {
-    return getWasmTableEntry(index)(a1);
-  } catch(e) {
-    stackRestore(sp);
-    if (!(e instanceof EmscriptenEH)) throw e;
-    _setThrew(1, 0);
-  }
-}
-
-function invoke_iiiiii(index,a1,a2,a3,a4,a5) {
-  var sp = stackSave();
-  try {
-    return getWasmTableEntry(index)(a1,a2,a3,a4,a5);
-  } catch(e) {
-    stackRestore(sp);
-    if (!(e instanceof EmscriptenEH)) throw e;
-    _setThrew(1, 0);
-  }
-}
-
 function invoke_ii(index,a1) {
   var sp = stackSave();
   try {
@@ -12183,10 +12173,10 @@ function invoke_vif(index,a1,a2) {
   }
 }
 
-function invoke_iiffff(index,a1,a2,a3,a4,a5) {
+function invoke_iiiff(index,a1,a2,a3,a4) {
   var sp = stackSave();
   try {
-    return getWasmTableEntry(index)(a1,a2,a3,a4,a5);
+    return getWasmTableEntry(index)(a1,a2,a3,a4);
   } catch(e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -12216,10 +12206,10 @@ function invoke_viiiii(index,a1,a2,a3,a4,a5) {
   }
 }
 
-function invoke_iiiff(index,a1,a2,a3,a4) {
+function invoke_iiiiff(index,a1,a2,a3,a4,a5) {
   var sp = stackSave();
   try {
-    return getWasmTableEntry(index)(a1,a2,a3,a4);
+    return getWasmTableEntry(index)(a1,a2,a3,a4,a5);
   } catch(e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -12249,6 +12239,17 @@ function invoke_viiii(index,a1,a2,a3,a4) {
   }
 }
 
+function invoke_fi(index,a1) {
+  var sp = stackSave();
+  try {
+    return getWasmTableEntry(index)(a1);
+  } catch(e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
 function invoke_vi(index,a1) {
   var sp = stackSave();
   try {
@@ -12271,7 +12272,7 @@ function invoke_viiiiii(index,a1,a2,a3,a4,a5,a6) {
   }
 }
 
-function invoke_iiiiff(index,a1,a2,a3,a4,a5) {
+function invoke_iiiiii(index,a1,a2,a3,a4,a5) {
   var sp = stackSave();
   try {
     return getWasmTableEntry(index)(a1,a2,a3,a4,a5);
@@ -12308,6 +12309,17 @@ function invoke_viiiiiii(index,a1,a2,a3,a4,a5,a6,a7) {
   var sp = stackSave();
   try {
     getWasmTableEntry(index)(a1,a2,a3,a4,a5,a6,a7);
+  } catch(e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_iiffff(index,a1,a2,a3,a4,a5) {
+  var sp = stackSave();
+  try {
+    return getWasmTableEntry(index)(a1,a2,a3,a4,a5);
   } catch(e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -12352,6 +12364,28 @@ function invoke_viiiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9) {
   var sp = stackSave();
   try {
     getWasmTableEntry(index)(a1,a2,a3,a4,a5,a6,a7,a8,a9);
+  } catch(e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_iif(index,a1,a2) {
+  var sp = stackSave();
+  try {
+    return getWasmTableEntry(index)(a1,a2);
+  } catch(e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_iiff(index,a1,a2,a3) {
+  var sp = stackSave();
+  try {
+    return getWasmTableEntry(index)(a1,a2,a3);
   } catch(e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
