@@ -24,7 +24,7 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center sm:items-end sm:justify-start p-4 sm:bottom-48 sm:left-48 sm:p-0">
+        <div className="absolute inset-0 flex items-center justify-center sm:items-end sm:justify-start p-4 sm:bottom-[20%] sm:left-[10%] sm:p-0">
           <div className="flex max-w-4xl flex-col items-center sm:items-start gap-6 sm:gap-6 w-full sm:w-auto text-center sm:text-left">
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-4">
               <img
@@ -54,6 +54,16 @@ function App() {
                 style={{ paddingTop: "8px", paddingBottom: "8px", backgroundColor: "#209cee" }}
               >
                 GitHub
+              </a>
+
+              <a
+                className="nes-btn is-warning transition-all duration-75 hover:-translate-y-1 hover:shadow-[0_8px_0_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none shadow-[0_4px_0_rgba(0,0,0,1)] text-[10px] sm:text-base w-full sm:w-auto"
+                href="https://github.com/aloyak/origin/releases/latest"
+                target="_blank"
+                rel="noreferrer"
+                style={{ paddingTop: "8px", paddingBottom: "8px", backgroundColor: "#ffcc00" }}
+              >
+                Releases
               </a>
 
               <a
