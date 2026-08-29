@@ -1,5 +1,6 @@
 import heroBackground from "../resources/sponzalighting.png";
 import originLogo from "../resources/originlogo.png";
+import jspBackground from "../resources/jsp2.jpg";
 
 import "nes.css/css/nes.min.css";
 
@@ -117,6 +118,38 @@ function App() {
               Free Download!
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="relative w-full py-24 sm:py-32 overflow-hidden border-gray-800 mt-8 sm:mt-16">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${jspBackground})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            imageRendering: "pixelated",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 flex flex-col items-center text-center gap-6 sm:gap-8">
+          <h2 className="text-lg sm:text-2xl md:text-3xl text-orange-400">
+            Ready to start building?
+          </h2>
+          <p className="text-[8px] sm:text-[10px] md:text-xs leading-loose text-gray-300 max-w-xl">
+            Join the development, contribute to the source code, or just grab the latest release and start creating your own 3D games!
+          </p>
+          <a
+            className="nes-btn is-warning transition-all duration-75 hover:-translate-y-1 hover:shadow-[0_8px_0_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none shadow-[0_4px_0_rgba(0,0,0,1)] text-[10px] sm:text-base mt-2"
+            href="https://github.com/aloyak/origin/releases/latest"
+            target="_blank"
+            rel="noreferrer"
+            style={{ paddingTop: "8px", paddingBottom: "8px", backgroundColor: "#ffcc00" }}
+          >
+            Get the Engine
+          </a>
         </div>
       </section>
 
