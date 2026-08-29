@@ -1,6 +1,8 @@
 import heroBackground from "../resources/sponzalighting.png";
 import originLogo from "../resources/originlogo.png";
 import jspBackground from "../resources/jsp2.jpg";
+import sandbox from "../resources/sbox.png";
+import jsp from "../resources/jsp.jpg";
 
 import "nes.css/css/nes.min.css";
 
@@ -78,7 +80,7 @@ function App() {
           <div className="w-full md:w-1/2">
             <div className="aspect-video bg-gray-900 border-4 border-gray-700 p-2 shadow-[4px_4px_0_rgba(0,0,0,1)]">
               <img 
-                src="resources/sbox.png" 
+                src={jsp}
                 alt="sbox" 
                 className="w-full h-full object-cover" 
                 style={{ imageRendering: "pixelated" }} 
@@ -97,7 +99,7 @@ function App() {
           <div className="w-full md:w-1/2">
             <div className="aspect-video bg-gray-900 border-4 border-gray-700 p-2 shadow-[4px_4px_0_rgba(0,0,0,1)]">
               <img 
-                src="resources/jsp.jpg" 
+                src={jspBackground}
                 alt="JSP" 
                 className="w-full h-full object-cover" 
                 style={{ imageRendering: "pixelated" }} 
