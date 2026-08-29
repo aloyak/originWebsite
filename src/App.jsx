@@ -80,7 +80,7 @@ function App() {
           <div className="w-full md:w-1/2">
             <div className="aspect-video bg-gray-900 border-4 border-gray-700 p-2 shadow-[4px_4px_0_rgba(0,0,0,1)]">
               <img 
-                src={jsp}
+                src={sandbox}
                 alt="sbox" 
                 className="w-full h-full object-cover" 
                 style={{ imageRendering: "pixelated" }} 
@@ -99,7 +99,7 @@ function App() {
           <div className="w-full md:w-1/2">
             <div className="aspect-video bg-gray-900 border-4 border-gray-700 p-2 shadow-[4px_4px_0_rgba(0,0,0,1)]">
               <img 
-                src={jspBackground}
+                src={jsp}
                 alt="JSP" 
                 className="w-full h-full object-cover" 
                 style={{ imageRendering: "pixelated" }} 
